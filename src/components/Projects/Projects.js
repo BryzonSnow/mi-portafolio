@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import picar from "../../Assets/Projects/picar.png";
 import dash from "../../Assets/Projects/dash.png";
+import villanosImg from "../../Assets/Projects/villanos.png";
 
 function Projects() {
   return (
@@ -17,6 +18,16 @@ function Projects() {
           Unos cuantos projectos en los que he trabajo ultimamente.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={villanosImg}
+              isBlog={false}
+              title="Menú Digital Los Villanos"
+              description="Solución comercial autoadministrable para un restaurante local. Permite la gestión eficiente de categorías y platos mediante una interfaz limpia. Backend desarrollado con Python y Flask, utilizando SQLAlchemy con SQLite para la base de datos, y Bootstrap para un frontend adaptable."
+              ghLink="https://github.com/BryzonSnow/menu-villanos"
+              demoLink="https://losvillanos.pythonanywhere.com/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={picar} // Reemplaza con la variable de tu imagen importada
