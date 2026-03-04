@@ -47,7 +47,7 @@ function NavBar() {
               fontFamily: "monospace",
             }}
           >
-            B.S.
+            B.S.T
           </span>
         </Navbar.Brand>
         <Navbar.Toggle
