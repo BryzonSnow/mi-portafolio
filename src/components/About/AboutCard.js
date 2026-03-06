@@ -19,13 +19,19 @@ function AboutCard() {
 
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Jugar videojuegos (League of Legends, Touhou, Albion Online)
+              <ImPointRight /> Jugar videojuegos
             </li>
             <li className="about-activity">
-              <ImPointRight /> Ver series
+              <ImPointRight /> Ver series o anime
             </li>
             <li className="about-activity">
-              <ImPointRight /> Escuchar rock, punk y metal
+              <ImPointRight /> Escuchar punk, rap o cualquier genero
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> Tomar fotografias
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> Leer
             </li>
           </ul>
         </blockquote>
