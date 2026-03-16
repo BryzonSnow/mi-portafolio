@@ -14,7 +14,6 @@ import Git from "../../Assets/TechIcons/Git.svg";
 import Docker from "../../Assets/TechIcons/Docker.svg";
 import Mongo from "../../Assets/TechIcons/Mongo.svg";
 import SQL from "../../Assets/TechIcons/SQL.svg";
-import Kubernates from "../../Assets/TechIcons/Kubernates.svg";
 import MUI from "../../Assets/TechIcons/MUI.svg";
 import Postman from "../../Assets/TechIcons/Postman.svg";
 
@@ -47,10 +46,6 @@ function Techstack() {
         <div className="tech-icons-text">React.Js</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity fontSize={"24px"} />
-        <div className="tech-icons-text">Solidity</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <img src={Mongo} alt="mongoDb" />
         <div className="tech-icons-text">Mongo DB</div>
       </Col>
@@ -66,11 +61,6 @@ function Techstack() {
         <img src={Docker} alt="docker" />
         <div className="tech-icons-text">Docker</div>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Kubernates} alt="kubernetes" />
-        <div className="tech-icons-text">Kubernetes</div>
-      </Col>
-
       <Col xs={4} md={2} className="tech-icons">
         <img src={SQL} alt="SQL" />
         <div className="tech-icons-text">Postgresql</div>
