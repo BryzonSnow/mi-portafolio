@@ -56,6 +56,7 @@ function Projects() {
               title="Dashboard Accidentes Biobío"
               description="Panel interactivo para visualizar y analizar la accidentabilidad en la Región del Biobío. Extracción, limpieza y modelado de datos crudos para transformar métricas en información útil y accesible. Desarrollado utilizando Python, Pandas, SQL y Streamlit."
               ghLink="https://github.com/BryzonSnow/analisis-vial-biobio"
+              demoLink="https://bryzonsnow-analisis-vial-biobio-app-ijnjlu.streamlit.app/"
             />
           </Col>
         </Row>
