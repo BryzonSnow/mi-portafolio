@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import picar from "../../Assets/Projects/picar.png";
 import dash from "../../Assets/Projects/dash.png";
 import villanosImg from "../../Assets/Projects/villanos.png";
+import chatImg from "../../Assets/Projects/chatImg.png"
 
 function Projects() {
   return (
@@ -18,6 +19,16 @@ function Projects() {
           Unos cuantos projectos en los que he trabajo ultimamente.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chatImg}
+              isBlog={false}
+              title="Sistema de Mensajería en Tiempo Real Multicliente"
+              description="Plataforma bidireccional construida con Node.js y Socket.io. Cuenta con dos clientes independientes (React y Vue 3) sincronizados en tiempo real, tipado estricto con TypeScript y manejo avanzado de estado (Zustand/Pinia)."
+              ghLink="https://github.com/BryzonSnow/prueba-tecnica-chat"
+              demoLink="https://prueba-tecnica-chat.vercel.app/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={villanosImg}
