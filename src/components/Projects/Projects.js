@@ -5,7 +5,8 @@ import Particle from "../Particle";
 import picar from "../../Assets/Projects/picar.png";
 import dash from "../../Assets/Projects/dash.png";
 import villanosImg from "../../Assets/Projects/villanos.png";
-import chatImg from "../../Assets/Projects/chatImg.png"
+import chatImg from "../../Assets/Projects/chatImg.png";
+import brieflygoImg from "../../Assets/Projects/brieflygo.png";
 
 function Projects() {
   return (
@@ -19,6 +20,16 @@ function Projects() {
           Unos cuantos projectos en los que he trabajo ultimamente.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={brieflygoImg}
+              isBlog={false}
+              title="BrieflyGo - Desktop Daemon"
+              description="Aplicación de escritorio nativa y descentralizada construida con Go y Wails. Funciona como un daemon concurrente (Goroutines) que recolecta noticias en segundo plano y notifica vía WhatsApp. Implementa arquitectura BYOK (Bring Your Own Key) y persistencia local con SQLite para evitar costos de infraestructura en la nube y optimizar el uso de APIs gratuitas mediante un modo Digest."
+              ghLink="https://github.com/BryzonSnow/newsbot-desktop"
+              demoLink="https://github.com/BryzonSnow/newsbot-desktop/releases/tag/v1.0.1"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatImg}
