@@ -13,32 +13,35 @@ function Home2() {
               PERMÍTEME <span className="purple"> PRESENTARME </span>
             </h1>
             <p className="home-about-body">
-              Soy un Ingeniero civil en informatica apasionado por resolver problemas complejos y
-              llevar modelos teóricos a la práctica.
+              Soy Ingeniero Civil en Informática, especializado en{" "}
+              <i>
+                <b className="purple">desarrollo backend con Python</b>
+              </i>
+              , automatización de procesos y procesamiento de datos.
               <br />
               <br />
-              Mis herramientas principales incluyen
+              Construyo{" "}
+              <i>
+                <b className="purple">
+                  APIs REST, pipelines ETL y sistemas de extracción documental
+                </b>
+              </i>{" "}
+              con
               <i>
                 <b className="purple">
                   {" "}
-                  Python, SQL, React y tecnologías de Machine Learning.{" "}
+                  Flask, PostgreSQL y Docker
                 </b>
               </i>
+              , tanto para clientes reales como para entornos institucionales.
               <br />
               <br />
-              Mis áreas de interés abarcan desde la &nbsp;
-              <i>
-                <b className="purple">Automatización y el Análisis de Datos </b>{" "}
-                hasta la integración de{" "}
-                <b className="purple">Inteligencia Artificial en Robótica</b>{" "}
-                para crear soluciones accesibles.
-              </i>
-              <br />
-              <br />
-              También disfruto construyendo productos completos, aplicando mi
-              experiencia en bases de datos y frameworks modernos como{" "}
-              <b className="purple">Vite, Tailwind y Flask</b> para desarrollar
-              aplicaciones web funcionales.
+              También trabajo el lado Full Stack con{" "}
+              <b className="purple">React y JavaScript</b>, y exploro la{" "}
+              <b className="purple">
+                Visión por Computador e IA aplicada
+              </b>{" "}
+              para crear soluciones accesibles.
             </p>
           </Col>
           <Col md={4} className="myAvtar">

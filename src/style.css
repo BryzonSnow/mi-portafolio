@@ -759,3 +759,170 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+/* --------- */
+/* Experience / Trayectoria */
+/* --------- */
+
+.experience-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 80px !important;
+  background-image: var(--section-background-color) !important;
+  color: white !important;
+}
+
+.experience-intro {
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 720px;
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+
+.experience-timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.experience-timeline-item {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.experience-timeline-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 24px;
+  padding-top: 0.5rem;
+}
+
+.experience-timeline-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--imp-text-color);
+  box-shadow: 0 0 12px rgba(199, 112, 240, 0.6);
+  flex-shrink: 0;
+}
+
+.experience-timeline-line {
+  width: 2px;
+  flex: 1;
+  min-height: 40px;
+  margin-top: 8px;
+  background: linear-gradient(
+    to bottom,
+    rgba(199, 112, 240, 0.8),
+    rgba(199, 112, 240, 0.15)
+  );
+}
+
+.experience-card {
+  flex: 1;
+  padding: 1.5rem 1.75rem;
+  border-radius: 16px;
+  background: rgba(27, 26, 46, 0.6);
+  border: 1px solid rgba(199, 112, 240, 0.25);
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 8px 4px rgba(129, 72, 144, 0.35);
+}
+
+.experience-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.experience-year {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--imp-text-color);
+}
+
+.experience-type {
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  background-color: rgba(98, 54, 134, 0.8) !important;
+  border: 1px solid rgba(199, 112, 240, 0.3);
+}
+
+.experience-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: white;
+}
+
+.experience-organization {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.75rem;
+}
+
+.experience-highlight {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #f0d878;
+  background: rgba(240, 216, 120, 0.12);
+  border: 1px solid rgba(240, 216, 120, 0.35);
+  border-radius: 20px;
+}
+
+.experience-description {
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.experience-stack {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+}
+
+.experience-stack li {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.experience-stack li svg {
+  color: var(--imp-text-color);
+  margin-right: 4px;
+}
+
+@media (max-width: 767px) {
+  .experience-timeline-item {
+    gap: 1rem;
+  }
+
+  .experience-card {
+    padding: 1.25rem;
+  }
+
+  .experience-timeline-marker {
+    width: 16px;
+  }
+
+  .experience-timeline-dot {
+    width: 12px;
+    height: 12px;
+  }
+}

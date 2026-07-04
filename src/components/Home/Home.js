@@ -30,7 +30,7 @@ function Home() {
 
               <h1 className="heading-name">
                 Soy
-                <strong className="main-name"> Bairon Sanhueza Torres</strong>
+                <strong className="main-name"> Bairon Sanhueza</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -54,7 +54,7 @@ function Home() {
       <Container>
         <Row style={{ paddingTop: "50px", paddingBottom: "80px" }}>
           <Col md={12} className="home-about-social">
-            <h1>Encuentrame en</h1>
+            <h1>Encuéntrame en</h1>
             <p>
               Eres libre de <span className="purple">hablar </span>conmigo
             </p>
@@ -81,7 +81,7 @@ function Home() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/bairon-sanhueza-torres-949412317/"
+                  href="https://www.linkedin.com/in/bsanhuezatorres/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"

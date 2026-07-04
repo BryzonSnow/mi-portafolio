@@ -8,10 +8,13 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hola a todos, soy <span className="purple">Bairon Sanhueza </span>
-            de <span className="purple">Concepción, Chile</span>.
+            Hola a todos, soy <span className="purple">Bairon Sanhueza</span> de{" "}
+            <span className="purple">Concepción, Chile</span>.
             <br />
-            <span className="purple">Soy Ingeniero civil en informatica con un fuerte enfoque en análisis de datos, desarrollo backend/fullstack y Machine Learning.</span>
+            <span className="purple">
+              Ingeniero Civil en Informática especializado en desarrollo backend
+              con Python, automatización de procesos y procesamiento de datos.
+            </span>
             <br />
             <br />
             Aparte de programar, ¡hay otras cosas que disfruto hacer!
@@ -25,10 +28,10 @@ function AboutCard() {
               <ImPointRight /> Ver series o anime
             </li>
             <li className="about-activity">
-              <ImPointRight /> Escuchar punk, rap o cualquier genero
+              <ImPointRight /> Escuchar punk, rap o cualquier género
             </li>
             <li className="about-activity">
-              <ImPointRight /> Tomar fotografias
+              <ImPointRight /> Tomar fotografías
             </li>
             <li className="about-activity">
               <ImPointRight /> Leer

@@ -7,6 +7,8 @@ import dash from "../../Assets/Projects/dash.png";
 import villanosImg from "../../Assets/Projects/villanos.png";
 import chatImg from "../../Assets/Projects/chatImg.png";
 import brieflygoImg from "../../Assets/Projects/brieflygo.png";
+import duametricsImg from "../../Assets/Projects/duametrics.png";
+import pdiImg from "../../Assets/Projects/pdi.png";
 
 function Projects() {
   return (
@@ -14,12 +16,40 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          Mis mas recientes <strong className="purple">trabajos</strong>
+          Mis más recientes <strong className="purple">trabajos</strong>
         </h1>
         <p style={{ color: "white" }}>
-          Unos cuantos projectos en los que he trabajo ultimamente.
+          Algunos proyectos en los que he trabajado últimamente.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={duametricsImg}
+              isBlog={false}
+              title="Juguetea — DuaMetrics"
+              description="Plataforma EdTech en producción para profesionales del Programa de Integración Escolar (PIE). DuaMetrics es el módulo de evaluación dentro de Juguetea: permite a docentes crear actividades y exámenes, y monitorear el progreso de estudiantes desde tablets y ordenadores. Backend en Python/Flask con API REST, PostgreSQL, Docker y tres perfiles de usuario."
+              demoLink="https://juguetea.pythonanywhere.com/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={villanosImg}
+              isBlog={false}
+              title="Menú Digital Los Villanos"
+              description="Solución e-commerce Full Stack para digitalizar el catálogo comercial de un restaurante local. Backend en Python/Flask con SQLAlchemy, API REST e integración de notificaciones automáticas vía WhatsApp. Desplegado en PythonAnywhere."
+              ghLink="https://github.com/BryzonSnow/menu-villanos"
+              demoLink="https://losvillanos.pythonanywhere.com/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={pdiImg}
+              isBlog={false}
+              title="Sistema de Extracción de Datos — PDI"
+              description="Plataforma web desarrollada durante mi práctica profesional en la Policía de Investigaciones de Chile. Automatiza la extracción y categorización de datos estructurados y no estructurados desde informes policiales con pipelines en Python (Pandas, PyMuPDF, pdfplumber, SQLAlchemy). Incluye web scraper con alertas vía WhatsApp y reportería en PDF/Excel. Reconocido como Practicante Destacado."
+              highlight="Practicante Destacado"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={brieflygoImg}
@@ -42,24 +72,13 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={villanosImg}
-              isBlog={false}
-              title="Menú Digital Los Villanos"
-              description="Solución comercial autoadministrable para un restaurante local. Permite la gestión eficiente de categorías y platos mediante una interfaz limpia. Backend desarrollado con Python y Flask, utilizando SQLAlchemy con SQLite para la base de datos, y Bootstrap para un frontend adaptable."
-              ghLink="https://github.com/BryzonSnow/menu-villanos"
-              demoLink="https://losvillanos.pythonanywhere.com/"
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={picar} // Reemplaza con la variable de tu imagen importada
+              imgPath={picar}
               isBlog={false}
               title="Navegación Autónoma (PiCar-X)"
-              description="Sistema de asistencia para personas con discapacidad motora. Implementa modelos de Machine Learning y Deep Learning en un vehículo a escala para procesar imágenes en tiempo real, reconocer señales y navegar autónomamente. Construido con Python, TensorFlow, PyTorch, Keras, Roboflow y Pandas sobre entornos Linux."
+              description="Tesis de grado: sistema de asistencia con Visión por Computador en un vehículo a escala. Entrené una CNN con PyTorch y YOLOv5 alcanzando 90 % mAP, con dataset propio de 1.500+ imágenes en Roboflow. Inferencia optimizada en Raspberry Pi 4 a 20 FPS en tiempo real."
               ghLink="https://github.com/BryzonSnow/Mark-6"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={dash}

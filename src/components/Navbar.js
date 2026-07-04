@@ -12,6 +12,7 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  AiOutlineHistory,
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
@@ -87,7 +88,17 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Projectos
+                Proyectos
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/experience"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineHistory style={{ marginBottom: "2px" }} /> Trayectoria
               </Nav.Link>
             </Nav.Item>
 
