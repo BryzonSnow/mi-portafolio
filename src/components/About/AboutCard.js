@@ -22,7 +22,7 @@ function AboutCard() {
 
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Jugar videojuegos
+              <ImPointRight /> Leer
             </li>
             <li className="about-activity">
               <ImPointRight /> Ver series o anime
@@ -34,7 +34,7 @@ function AboutCard() {
               <ImPointRight /> Tomar fotografías
             </li>
             <li className="about-activity">
-              <ImPointRight /> Leer
+              <ImPointRight /> Jugar videojuegos
             </li>
           </ul>
         </blockquote>

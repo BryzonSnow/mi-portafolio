@@ -76,6 +76,7 @@ function Projects() {
               isBlog={false}
               title="Navegación Autónoma (PiCar-X)"
               description="Tesis de grado: sistema de asistencia con Visión por Computador en un vehículo a escala. Entrené una CNN con PyTorch y YOLOv5 alcanzando 90 % mAP, con dataset propio de 1.500+ imágenes en Roboflow. Inferencia optimizada en Raspberry Pi 4 a 20 FPS en tiempo real."
+              highlight="Graduado con máxima distinción"
               ghLink="https://github.com/BryzonSnow/Mark-6"
             />
           </Col>
