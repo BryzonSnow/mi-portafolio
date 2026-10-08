@@ -16,10 +16,14 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import { FaTerminal, FaBriefcase } from "react-icons/fa";
+import useTheme from "../theme/useTheme";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const [theme, toggleTheme] = useTheme();
+  const isDev = theme === "dev";
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -110,6 +114,17 @@ function NavBar() {
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> CV
               </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <button
+                type="button"
+                className="theme-toggle"
+                aria-pressed={isDev}
+                onClick={toggleTheme}
+              >
+                {isDev ? <FaBriefcase /> : <FaTerminal />}{" "}
+                {isDev ? "Modo Formal" : "Modo Dev"}
+              </button>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

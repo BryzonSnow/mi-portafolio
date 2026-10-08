@@ -1,0 +1,166 @@
+/* Tema Formal: limpio y moderno. Se activa con <html data-theme="formal">. */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+html[data-theme="formal"] {
+  --bg: #f7f8fa;
+  --surface: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --accent: #4f46e5;
+  --accent-soft: #eef2ff;
+  --imp-text-color: var(--accent);
+  --section-background-color: none;
+  --image-gradient: none;
+}
+
+html[data-theme="formal"] body {
+  background: var(--bg) !important;
+  color: var(--text);
+  font-family: "Inter", system-ui, sans-serif !important;
+  font-size: 16px;
+  line-height: 1.6;
+  transition: background-color 0.2s, color 0.2s;
+}
+html[data-theme="formal"] a { color: var(--accent); }
+html[data-theme="formal"] :focus-visible { outline: 2px solid var(--accent) !important; outline-offset: 2px; }
+html[data-theme="formal"] .purple,
+html[data-theme="formal"] .main-name { color: var(--accent) !important; }
+html[data-theme="formal"] h1, html[data-theme="formal"] h2, html[data-theme="formal"] h3,
+html[data-theme="formal"] h4, html[data-theme="formal"] .project-heading { color: var(--text) !important; font-weight: 700; }
+
+/* Textos que style.css fuerza en blanco */
+html[data-theme="formal"] .home-content,
+html[data-theme="formal"] .home-about-description,
+html[data-theme="formal"] .home-about-social,
+html[data-theme="formal"] .about-section,
+html[data-theme="formal"] .resume-section,
+html[data-theme="formal"] .experience-section,
+html[data-theme="formal"] .project-card-view,
+html[data-theme="formal"] .blog-card-view,
+html[data-theme="formal"] .quote-card-view,
+html[data-theme="formal"] .blog-link,
+html[data-theme="formal"] .tech-icons,
+html[data-theme="formal"] .tech-icons-text,
+html[data-theme="formal"] .experience-title { color: var(--text) !important; }
+html[data-theme="formal"] .experience-organization,
+html[data-theme="formal"] .experience-intro,
+html[data-theme="formal"] .experience-stack li,
+html[data-theme="formal"] .experience-description { color: var(--muted) !important; text-align: left; }
+
+html[data-theme="formal"] #preloader { background-color: var(--bg); }
+html[data-theme="formal"] .wave { animation: none; }
+html[data-theme="formal"] .heading { font-size: 1.6em !important; color: var(--muted); font-weight: 500; }
+html[data-theme="formal"] .heading-name { font-size: 2.6em !important; }
+html[data-theme="formal"] .Typewriter__wrapper { color: var(--accent) !important; font-weight: 600 !important; font-size: 1.8em !important; }
+html[data-theme="formal"] .Typewriter__cursor { color: var(--accent) !important; }
+html[data-theme="formal"] .home-about-body { text-align: left; }
+
+/* Scrollbar */
+html[data-theme="formal"] ::-webkit-scrollbar-track { background: var(--bg); }
+html[data-theme="formal"] ::-webkit-scrollbar-thumb { background: #c7cbd4; }
+html[data-theme="formal"] ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+/* Navbar */
+html[data-theme="formal"] .sticky {
+  background-color: rgba(255, 255, 255, 0.92) !important;
+  border-bottom: 1px solid var(--border);
+  box-shadow: none !important;
+}
+html[data-theme="formal"] .navbar-brand .purple { color: var(--accent) !important; }
+html[data-theme="formal"] .navbar-nav .nav-link { color: var(--text) !important; font-size: 0.85em; font-weight: 500; }
+html[data-theme="formal"] .navbar-nav .nav-item a::after { height: 2px; background: var(--accent); }
+html[data-theme="formal"] .navbar-toggler span { background-color: var(--accent) !important; }
+@media (max-width: 767px) {
+  html[data-theme="formal"] .navbar { background-color: #fff !important; border-bottom: 1px solid var(--border); }
+}
+
+/* Botón de cambio de tema (ambos temas; el dev lo reestiliza abajo) */
+.theme-toggle {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin: 0.4rem 0 0.4rem 1.2rem;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.8em; font-weight: 600; cursor: pointer;
+  border: 1px solid var(--border, #e5e7eb); border-radius: 999px;
+  background: var(--surface, #fff); color: var(--text, #1f2937);
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+html[data-theme="formal"] .theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
+html[data-theme="dev"] .theme-toggle {
+  background: transparent; color: var(--fg); border: 2px solid var(--line); border-radius: 0;
+  font-family: var(--font-display); font-size: 0.6em; text-transform: uppercase; letter-spacing: 0.06em;
+}
+html[data-theme="dev"] .theme-toggle:hover { background: var(--fg); color: var(--bg); }
+
+/* Iconos sociales */
+html[data-theme="formal"] .home-social-icons { background: var(--surface) !important; border: 1px solid var(--border); }
+html[data-theme="formal"] .home-social-icons::before { display: none; }
+html[data-theme="formal"] .home-social-icons:hover { color: var(--accent); box-shadow: 0 4px 12px rgba(79, 70, 229, 0.18) !important; text-shadow: none !important; }
+html[data-theme="formal"] .icon-colour { color: var(--accent) !important; }
+
+/* Secciones */
+html[data-theme="formal"] .project-section,
+html[data-theme="formal"] .resume-section,
+html[data-theme="formal"] .experience-section { background-image: none !important; }
+
+/* Tarjetas */
+html[data-theme="formal"] .project-card-view,
+html[data-theme="formal"] .blog-card-view,
+html[data-theme="formal"] .experience-card {
+  background: var(--surface) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 1px 3px rgba(17, 24, 39, 0.06), 0 8px 24px -12px rgba(17, 24, 39, 0.12) !important;
+  opacity: 1 !important;
+}
+html[data-theme="formal"] .project-card-view:hover,
+html[data-theme="formal"] .blog-card-view:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 2px 6px rgba(17, 24, 39, 0.08), 0 16px 32px -12px rgba(79, 70, 229, 0.25) !important;
+}
+html[data-theme="formal"] .experience-card:hover { transform: none; box-shadow: 0 8px 28px -10px rgba(79, 70, 229, 0.25) !important; }
+html[data-theme="formal"] .quote-card-view { background: transparent !important; border: 0 !important; box-shadow: none !important; }
+html[data-theme="formal"] .card-img-top { opacity: 1 !important; border-radius: 12px !important; }
+html[data-theme="formal"] .card-text { text-align: left !important; color: var(--muted) !important; }
+html[data-theme="formal"] .card-title { font-weight: 700; color: var(--text); }
+
+/* Botones */
+html[data-theme="formal"] .btn-primary,
+html[data-theme="formal"] .like-btn,
+html[data-theme="formal"] .fork-btn-inner {
+  background: var(--accent) !important; border: 1px solid var(--accent) !important;
+  color: #fff !important; border-radius: 8px !important; font-weight: 600;
+}
+html[data-theme="formal"] .btn-primary:hover,
+html[data-theme="formal"] .like-btn:hover,
+html[data-theme="formal"] .fork-btn-inner:hover { background: #4338ca !important; border-color: #4338ca !important; transform: none !important; }
+
+/* Stack */
+html[data-theme="formal"] .tech-icons {
+  background: var(--surface); outline: 1px solid var(--border) !important;
+  border-radius: 10px !important; box-shadow: none !important;
+}
+html[data-theme="formal"] .tech-icons:hover { outline-color: var(--accent) !important; transform: translateY(-2px) !important; }
+
+/* Experiencia */
+html[data-theme="formal"] .experience-timeline-dot { background: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
+html[data-theme="formal"] .experience-timeline-line { background: var(--border); }
+html[data-theme="formal"] .experience-year { color: var(--accent); }
+html[data-theme="formal"] .experience-type { background: var(--accent-soft) !important; color: var(--accent) !important; border: 0; }
+html[data-theme="formal"] .experience-highlight { color: #92400e; background: #fef3c7; border-color: #fcd34d; }
+html[data-theme="formal"] .experience-stack li svg { color: var(--accent); }
+
+/* CV */
+html[data-theme="formal"] .resume .resume-item { border-left: 2px solid var(--border); }
+html[data-theme="formal"] .resume .resume-item::before { background: var(--surface); border-color: var(--accent); }
+html[data-theme="formal"] .resume .resume-item .resume-title { background: var(--accent-soft); color: var(--accent); }
+
+/* Footer */
+html[data-theme="formal"] .footer { background: var(--surface); border-top: 1px solid var(--border); }
+html[data-theme="formal"] .footer h3 { color: var(--muted) !important; font-weight: 500; }
+html[data-theme="formal"] .footer-icons a { color: var(--text) !important; }
+html[data-theme="formal"] .blockquote-footer { color: var(--muted) !important; }
+
+/* Estilos en línea con color blanco en los componentes */
+html[data-theme="formal"] .project-section p[style] { color: var(--muted) !important; }
+html[data-theme="formal"] .home-about-social-links a, html[data-theme="formal"] .footer-icons a[style] { color: var(--text) !important; }
