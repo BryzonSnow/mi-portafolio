@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=VT323&display=swap");
+
+html[data-theme="dev"] {
+  --bg: #050409;
+  --panel: #0e0c20;
+  --line: #4b459c;
+  --fg: #d8d4ff;
+  --muted: #9a95d9;
+  --accent: #a39bff;
+  --font-display: "Silkscreen", "Courier New", monospace;
+  --font-body: "VT323", "Courier New", monospace;
+  --imp-text-color: var(--accent);
+  --section-background-color: none;
+  --image-gradient: none;
+}
+html[data-theme="dev"] body {
+  background: radial-gradient(circle at 50% 20%, rgba(108, 100, 214, 0.1), transparent 60%), var(--bg) !important;
+  background-attachment: fixed !important;
+  color: var(--fg);
+  font-family: var(--font-body) !important;
+  font-size: 21px;
+  line-height: 1.3;
+}
+html[data-theme="dev"] ::selection { background: var(--fg); color: var(--bg);
+}
+html[data-theme="dev"] :focus-visible { outline: 2px dashed var(--fg) !important; outline-offset: 3px;
+}
+html[data-theme="dev"] a { color: var(--fg);
+}
+html[data-theme="dev"] h1,
+html[data-theme="dev"] h2,
+html[data-theme="dev"] h3,
+html[data-theme="dev"] h4,
+html[data-theme="dev"] .project-heading,
+html[data-theme="dev"] .heading,
+html[data-theme="dev"] .heading-name,
+html[data-theme="dev"] .resume .resume-title {
+  font-family: var(--font-display) !important;
+  letter-spacing: 0.02em;
+}
+html[data-theme="dev"] .purple,
+html[data-theme="dev"] .main-name { color: var(--accent) !important;
+}
+html[data-theme="dev"]::-webkit-scrollbar { width: 8px;
+}
+html[data-theme="dev"]::-webkit-scrollbar-track { background: var(--bg);
+}
+html[data-theme="dev"]::-webkit-scrollbar-thumb { background: var(--line); border-radius: 0;
+}
+html[data-theme="dev"]::-webkit-scrollbar-thumb:hover { background: var(--accent);
+}
+html[data-theme="dev"] #preloader { background-color: var(--bg);
+}
+html[data-theme="dev"] .sticky {
+  background-color: rgba(5, 4, 9, 0.9) !important;
+  border-bottom: 2px solid var(--line);
+  box-shadow: none !important;
+}
+html[data-theme="dev"] .navbar-brand .purple { font-family: var(--font-display) !important;
+}
+html[data-theme="dev"] .navbar-nav .nav-link {
+  font-family: var(--font-display) !important;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+html[data-theme="dev"] .navbar-nav .nav-item a::after { height: 2px; border-radius: 0; background: var(--accent);
+}
+html[data-theme="dev"] .navbar-toggler span { background-color: var(--accent) !important; border-radius: 0;
+}
+@media (max-width: 767px) {
+html[data-theme="dev"] .navbar { background-color: var(--bg) !important; border-bottom: 2px solid var(--line);
+}
+}
+html[data-theme="dev"] .wave { animation: none;
+}
+html[data-theme="dev"] .home-section { z-index: auto;
+}
+html[data-theme="dev"] .heading { font-size: 1.6em !important; color: var(--muted);
+}
+html[data-theme="dev"] .heading-name { font-size: 2.2em !important;
+}
+html[data-theme="dev"] .Typewriter__wrapper { font-family: var(--font-body) !important; color: var(--fg) !important; font-weight: 400 !important; font-size: 1.9em !important;
+}
+html[data-theme="dev"] .Typewriter__cursor { color: var(--accent) !important;
+}
+html[data-theme="dev"] .home-about-body { font-size: 1.1em !important;
+}
+html[data-theme="dev"] .home-about-description { font-size: 0.9em;
+}
+html[data-theme="dev"] .myAvtar img { border: 2px solid var(--line); padding: 6px; background: var(--bg);
+}
+html[data-theme="dev"] .home-social-icons {
+  background: transparent !important;
+  border: 2px solid var(--line);
+  border-radius: 0 !important;
+  color: var(--fg);
+}
+html[data-theme="dev"] .home-social-icons::before { display: none;
+}
+html[data-theme="dev"] .home-social-icons:hover { background: var(--fg) !important; color: var(--bg) !important; box-shadow: none !important; text-shadow: none !important;
+}
+html[data-theme="dev"] .icon-colour { color: inherit !important;
+}
+html[data-theme="dev"] .project-section,
+html[data-theme="dev"] .resume-section,
+html[data-theme="dev"] .experience-section,
+html[data-theme="dev"] .about-section { background-image: none !important;
+}
+html[data-theme="dev"] .project-card-view,
+html[data-theme="dev"] .blog-card-view,
+html[data-theme="dev"] .experience-card,
+html[data-theme="dev"] .quote-card-view {
+  position: relative;
+  border: 2px solid var(--line) !important;
+  border-radius: 0 !important;
+  background: var(--bg) !important;
+  opacity: 1 !important;
+  box-shadow: 0 0 14px -6px var(--accent) !important;
+  transition: border-color 0.2s, box-shadow 0.2s !important;
+}
+html[data-theme="dev"] .quote-card-view { border: 0 !important; box-shadow: none !important;
+}
+html[data-theme="dev"] .project-card-view:hover,
+html[data-theme="dev"] .blog-card-view:hover,
+html[data-theme="dev"] .experience-card:hover {
+  transform: none !important;
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 18px -4px var(--accent) !important;
+}
+html[data-theme="dev"] .project-card-view::before,
+html[data-theme="dev"] .experience-card::before {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  pointer-events: none;
+  --b: var(--accent);
+  --s: 14px;
+  background:
+    linear-gradient(var(--b), var(--b)) top left / var(--s) 2px no-repeat,
+    linear-gradient(var(--b), var(--b)) top left / 2px var(--s) no-repeat,
+    linear-gradient(var(--b), var(--b)) top right / var(--s) 2px no-repeat,
+    linear-gradient(var(--b), var(--b)) top right / 2px var(--s) no-repeat,
+    linear-gradient(var(--b), var(--b)) bottom left / var(--s) 2px no-repeat,
+    linear-gradient(var(--b), var(--b)) bottom left / 2px var(--s) no-repeat,
+    linear-gradient(var(--b), var(--b)) bottom right / var(--s) 2px no-repeat,
+    linear-gradient(var(--b), var(--b)) bottom right / 2px var(--s) no-repeat;
+}
+html[data-theme="dev"] .card-img-top { border-radius: 0 !important; opacity: 0.9 !important;
+}
+html[data-theme="dev"] .card-title { font-family: var(--font-display); font-size: 1em; text-transform: uppercase;
+}
+html[data-theme="dev"] .card-text { font-size: 1em;
+}
+html[data-theme="dev"] .btn-primary,
+html[data-theme="dev"] .like-btn,
+html[data-theme="dev"] .fork-btn-inner {
+  background: var(--fg) !important;
+  color: var(--bg) !important;
+  border: 2px solid var(--fg) !important;
+  border-radius: 0 !important;
+  font-family: var(--font-display) !important;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+html[data-theme="dev"] .btn-primary:hover,
+html[data-theme="dev"] .like-btn:hover,
+html[data-theme="dev"] .fork-btn-inner:hover {
+  background: transparent !important;
+  color: var(--fg) !important;
+  transform: none !important;
+}
+html[data-theme="dev"] .tech-icons {
+  border-radius: 0 !important;
+  outline: 2px solid var(--line) !important;
+  box-shadow: none !important;
+  background: var(--bg);
+}
+html[data-theme="dev"] .tech-icons:hover { transform: none !important; outline-color: var(--accent) !important;
+}
+html[data-theme="dev"] .experience-timeline-dot { border-radius: 0; background: var(--accent); box-shadow: none;
+}
+html[data-theme="dev"] .experience-timeline-line { background: var(--line);
+}
+html[data-theme="dev"] .experience-year { font-family: var(--font-display); font-size: 0.9rem; color: var(--accent);
+}
+html[data-theme="dev"] .experience-type { border-radius: 0 !important; background: transparent !important; border: 2px solid var(--line) !important; color: var(--fg);
+}
+html[data-theme="dev"] .experience-highlight { border-radius: 0; color: var(--fg); background: transparent; border: 2px solid var(--accent); font-family: var(--font-display); font-size: 0.7rem;
+}
+html[data-theme="dev"] .experience-title { font-family: var(--font-display); font-size: 1.1rem; text-transform: uppercase;
+}
+html[data-theme="dev"] .experience-description,
+html[data-theme="dev"] .experience-intro { text-align: left;
+}
+html[data-theme="dev"] .experience-stack li svg { color: var(--accent);
+}
+html[data-theme="dev"] .resume .resume-item { border-left: 2px solid var(--line);
+}
+html[data-theme="dev"] .resume .resume-item::before { border-radius: 0; background: var(--bg); border-color: var(--accent);
+}
+html[data-theme="dev"] .resume .resume-item .resume-title { background: transparent; border: 2px solid var(--line);
+}
+html[data-theme="dev"] .footer {
+  background: var(--bg);
+  border-top: 2px solid var(--line);
+  font-family: var(--font-display);
+  font-size: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+html[data-theme="dev"] .blockquote-footer { color: var(--muted) !important;
+}
+@media (prefers-reduced-motion: reduce) {
+html[data-theme="dev"] * { transition: none !important; animation: none !important;
+}
+}
+html[data-theme="dev"] p,
+html[data-theme="dev"] li,
+html[data-theme="dev"] .card-text,
+html[data-theme="dev"] .project-card-view * { font-family: var(--font-body);
+}
+html[data-theme="dev"] .card-title { font-family: var(--font-display) !important;
+}
+html[data-theme="dev"] .card-text,
+html[data-theme="dev"] .home-about-body { text-align: left !important;
+}
+
+/* ---- Modo Dev extremo: CRT, marcos con nodos, glow ---- */
+html[data-theme="dev"] body { text-shadow: 0 0 6px rgba(150, 140, 255, 0.55); }
+html[data-theme="dev"] body::after {
+  content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 100;
+  background:
+    repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0 1px, transparent 1px 3px),
+    radial-gradient(ellipse at center, transparent 55%, rgba(0, 0, 0, 0.55) 100%);
+  animation: crt 7s infinite steps(1);
+}
+@keyframes crt { 0%, 96%, 100% { opacity: 1 } 97% { opacity: 0.82 } 98% { opacity: 1 } 99% { opacity: 0.9 } }
+html[data-theme="dev"] .project-card-view::after,
+html[data-theme="dev"] .experience-card::after {
+  content: ""; position: absolute; inset: -6px; pointer-events: none;
+  background:
+    radial-gradient(circle, var(--fg) 0 2.5px, transparent 3.5px) 0 0 / 12px 12px no-repeat,
+    radial-gradient(circle, var(--fg) 0 2.5px, transparent 3.5px) 100% 0 / 12px 12px no-repeat,
+    radial-gradient(circle, var(--fg) 0 2.5px, transparent 3.5px) 0 100% / 12px 12px no-repeat,
+    radial-gradient(circle, var(--fg) 0 2.5px, transparent 3.5px) 100% 100% / 12px 12px no-repeat;
+}
+html[data-theme="dev"] .wave { display: none; }
+html[data-theme="dev"] .home-about-description h1::before { content: "> "; color: var(--accent); }
+@media (prefers-reduced-motion: reduce) { html[data-theme="dev"] body::after { animation: none; } }
